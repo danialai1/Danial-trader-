@@ -1,0 +1,321 @@
+@import "tailwindcss";
+
+/* ==========================================
+   THEME SWITCHER OVERRIDES (LIGHT MODE)
+   ========================================== */
+.theme-light {
+  background-color: #f8fafc !important; /* Soft white slate background */
+  color: #1e293b !important; /* Slate-800 body text */
+}
+
+/* Base resets & transition rules */
+.theme-light,
+.theme-light *,
+.theme-light ::before,
+.theme-light ::after {
+  transition: background-color 0.25s ease, border-color 0.25s ease, color 0.15s ease !important;
+}
+
+/* Background overrides of main containers, sections, page content cards */
+.theme-light div[class*="top-[73px]"] {
+  background-color: rgba(248, 250, 252, 0.9) !important;
+  border-color: rgba(226, 232, 240, 0.8) !important;
+}
+
+.theme-light .bg-\[\#080B11\],
+.theme-light .bg-\[\#0A0E17\],
+.theme-light .bg-\[\#05070C\],
+.theme-light .bg-slate-950,
+.theme-light .bg-[#080B11],
+.theme-light .bg-slate-950\/80 {
+  background-color: #f1f5f9 !important; /* Light cool grey section backgrounds */
+}
+
+.theme-light .bg-\[\#0B0F19\],
+.theme-light .bg-[#0B0F19],
+.theme-light .bg-slate-900\/60,
+.theme-light .bg-[#121826]/90,
+.theme-light .bg-[#121826]/95,
+.theme-light .bg-[#121826],
+.theme-light .bg-slate-900,
+.theme-light .bg-slate-900\/40,
+.theme-light .bg-slate-850 {
+  background-color: #ffffff !important; /* Pure white card components */
+  color: #1e293b !important;
+}
+
+.theme-light .bg-amber-400\/5 {
+  background-color: rgba(217, 119, 6, 0.08) !important;
+}
+
+/* Specific button styles */
+.theme-light button.bg-slate-900,
+.theme-light a.bg-slate-900 {
+  background-color: #f8fafc !important;
+  color: #1e293b !important;
+  border-color: #e2e8f0 !important;
+}
+
+.theme-light button.bg-slate-900:hover,
+.theme-light a.bg-slate-900:hover {
+  background-color: #f1f5f9 !important;
+  color: #0f172a !important;
+}
+
+/* Text color overrides */
+.theme-light .text-white,
+.theme-light h1,
+.theme-light h2,
+.theme-light h3,
+.theme-light h4,
+.theme-light h5,
+.theme-light h6 {
+  color: #0f172a !important; /* Deep charcoal for headings */
+}
+
+.theme-light .text-slate-100,
+.theme-light .text-slate-200,
+.theme-light .text-slate-300 {
+  color: #334155 !important; /* Slate-700 for main body text */
+}
+
+.theme-light .text-slate-400,
+.theme-light .text-slate-450 {
+  color: #475569 !important; /* Slate-600 for secondary details */
+}
+
+.theme-light .text-slate-500 {
+  color: #64748b !important; /* Muted slate text */
+}
+
+/* Borders overrides */
+.theme-light .border-slate-800,
+.theme-light .border-slate-800\/80,
+.theme-light .border-slate-800\/60,
+.theme-light .border-slate-900,
+.theme-light .border-slate-900\/30,
+.theme-light .border-slate-900\/80 {
+  border-color: #e2e8f0 !important; /* Soft grey borders */
+}
+
+/* Glass Header overrides */
+.theme-light header {
+  background-color: rgba(255, 255, 255, 0.85) !important;
+  border-color: rgba(226, 232, 240, 0.8) !important;
+  backdrop-filter: blur(12px) !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03) !important;
+}
+
+.theme-light header .text-white {
+  color: #0f172a !important;
+}
+
+.theme-light header button.text-slate-400 {
+  color: #475569 !important;
+}
+
+.theme-light header button.text-slate-400:hover {
+  color: #d97706 !important;
+}
+
+.theme-light .mobile-menu-active {
+  background-color: #ffffff !important;
+}
+
+/* Interactive form inputs overrides */
+.theme-light input,
+.theme-light select,
+.theme-light textarea {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+.theme-light input::placeholder,
+.theme-light textarea::placeholder {
+  color: #94a3b8 !important;
+}
+
+.theme-light input:focus,
+.theme-light select:focus,
+.theme-light textarea:focus {
+  border-color: #f59e0b !important;
+  background-color: #f8fafc !important;
+}
+
+/* Leader bio hover states and portfolio card details */
+.theme-light .hover\:border-amber-400:hover {
+  border-color: #f59e0b !important;
+}
+
+/* Keep amber accent buttons readable on light mode */
+.theme-light .bg-amber-500 {
+  background-color: #f59e0b !important;
+  color: #ffffff !important; /* High contrast on gold */
+}
+
+.theme-light .bg-amber-500:hover {
+  background-color: #d97706 !important;
+}
+
+/* Simulated cargo fill tracking backgrounds */
+.theme-light .bg-slate-950 {
+  background-color: #f1f5f9 !important;
+}
+
+.theme-light .accent-amber-500 {
+  accent-color: #d97706 !important;
+}
+
+/* Invert monogram stroke */
+.theme-light .stroke-current {
+  color: #d97706 !important;
+}
+
+/* B2B Chat support and chat bubble styles */
+.theme-light .bg-[#1a2333]/90 {
+  background-color: #f1f5f9 !important;
+}
+
+.theme-light .bg-[#1a2333]/40 {
+  background-color: #e2e8f0 !important;
+}
+
+.theme-light .text-amber-300 {
+  color: #b45309 !important; /* Rich amber for readability */
+}
+
+.theme-light .text-amber-400 {
+  color: #b45309 !important;
+}
+
+.theme-light .bg-amber-500\/20 {
+  background-color: rgba(217, 119, 6, 0.1) !important;
+}
+
+.theme-light .bg-amber-500\/15 {
+  background-color: rgba(217, 119, 6, 0.08) !important;
+}
+
+.theme-light .bg-rose-500\/10 {
+  background-color: rgba(244, 63, 94, 0.08) !important;
+}
+
+.theme-light .bg-emerald-500\/10 {
+  background-color: rgba(16, 185, 129, 0.08) !important;
+}
+
+.theme-light .bg-sky-500\/10 {
+  background-color: rgba(14, 165, 233, 0.08) !important;
+}
+
+.theme-light .bg-slate-900 {
+  background-color: #f8fafc !important;
+}
+
+.theme-light .hover\:bg-slate-800:hover {
+  background-color: #f1f5f9 !important;
+}
+
+.theme-light .text-slate-450 {
+  color: #475569 !important;
+}
+
+/* ==========================================
+   GLOBAL PRINT MEDIA STYLES
+   ========================================== */
+@media print {
+  /* Hide interactive, non-document web elements */
+  header,
+  footer,
+  nav,
+  button,
+  form,
+  iframe,
+  input,
+  select,
+  textarea,
+  .no-print,
+  .print-hidden,
+  [role="button"],
+  /* Hide top warning/auth notification bar */
+  div[class*="bg-[#05070C]"],
+  /* Hide the Gemini AI Chat column or chat input areas */
+  div[class*="h-[580px]"],
+  /* Hide background visuals, glowing or decorative circles */
+  div[class*="blur-3xl"],
+  div[class*="filter"],
+  div[class*="absolute -z-10"] {
+    display: none !important;
+  }
+
+  /* Reset layout structure for plain paper margins */
+  body, 
+  html {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    font-size: 11pt !important;
+    line-height: 1.4 !important;
+  }
+
+  /* Ensure containers utilize the full print paper width */
+  main,
+  section,
+  .max-w-7xl,
+  .max-w-5xl,
+  .max-w-4xl,
+  .mx-auto {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: transparent !important;
+  }
+
+  /* Convert dark container boxes into neat grey-bordered white boxes */
+  .bg-\[\#121826\]\/90,
+  .bg-\[\#121826\]\/95,
+  .bg-\[\#121826\],
+  .bg-slate-900,
+  .bg-slate-950,
+  .bg-\[\#0B0F19\],
+  .bg-\[\#080B11\] {
+    background-color: #f8fafc !important;
+    color: #0f172a !important;
+    border: 1px solid #cbd5e1 !important;
+    border-radius: 8px !important;
+    box-shadow: none !important;
+    margin-bottom: 12pt !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* Force high contrast black ink for all titles, texts, and lists */
+  h1, h2, h3, h4, h5, h6, p, span, li, blockquote, strong {
+    color: #000000 !important;
+    text-shadow: none !important;
+  }
+
+  /* Display print headers or essential descriptions in tables nicely */
+  table, th, td {
+    border: 1px solid #cbd5e1 !important;
+    color: #000000 !important;
+  }
+
+  th {
+    background-color: #f1f5f9 !important;
+    font-weight: bold !important;
+  }
+
+  /* Avoid splitting critical sections across pages mid-sentence */
+  h1, h2, h3, h4, .page-break-avoid {
+    page-break-after: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* Maintain a clear 1-inch printable spacing */
+  @page {
+    margin: 1.5cm;
+  }
+}

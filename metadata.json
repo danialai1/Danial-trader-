@@ -1,0 +1,6 @@
+{
+  "name": "Innovative Biscuits & Kite Brand",
+  "description": "Authorized B2B trade and distribution portal for Innovative Biscuits (Pvt.) Ltd and Kite Brand (Mohsin Match Factory) safety matches, proudly represented by Danial Trader (Danial Ahmad).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
